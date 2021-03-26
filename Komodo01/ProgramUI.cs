@@ -17,7 +17,7 @@ namespace Komodo01
                 string userInput = Console.ReadLine();
                 if (userInput == "0")
                 {
-                    Console.WriteLine("Thanks for ruining my life! Goodbye.");
+                    Console.WriteLine("Goodbye!");
                     break;
                 }
                 else if (userInput == "1")
@@ -80,7 +80,7 @@ namespace Komodo01
                 }
                 else
                 {
-                    Console.WriteLine("You're really really kinda no smart. Enter valid serection prease");
+                    Console.WriteLine("Please enter valid selection.");
                 }
 
 

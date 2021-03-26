@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KarKlaim.cs" />
-    <Compile Include="KHomeKlaim.cs" />
+    <Compile Include="DerivativeKlaimKlasses\KarKlaim.cs" />
+    <Compile Include="DerivativeKlaimKlasses\KHomeKlaim.cs" />
     <Compile Include="Klaim.cs" />
-    <Compile Include="KTheftKlaim.cs" />
+    <Compile Include="DerivativeKlaimKlasses\KTheftKlaim.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,8 +55,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Klasses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
