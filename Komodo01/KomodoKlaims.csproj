@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DerivativeKlaimKlasses\KarKlaim.cs" />
-    <Compile Include="DerivativeKlaimKlasses\KHomeKlaim.cs" />
-    <Compile Include="Klaim.cs" />
-    <Compile Include="DerivativeKlaimKlasses\KTheftKlaim.cs" />
+    <Compile Include="KlaimKlasses\KarKlaim.cs" />
+    <Compile Include="KlaimKlasses\KHomeKlaim.cs" />
+    <Compile Include="KlaimKlasses\Klaim.cs" />
+    <Compile Include="KlaimKlasses\KTheftKlaim.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -7,7 +7,7 @@ namespace Komodo01
     {
         List<Klaim> _klaims = new List<Klaim>();
 
-        public List<Klaim> GetKlaims()
+        public List<Klaim> GetListOfKlaims()
         {
             return _klaims; 
         }

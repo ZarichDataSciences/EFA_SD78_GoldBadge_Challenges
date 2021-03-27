@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Komodo01
 {
@@ -23,23 +24,30 @@ namespace Komodo01
                 else if (userInput == "1")
                 {
                     // #1 is see all claims
-                    for(int i = 0; i < _repo.GetKlaims().Count; i++)
+                    for(int i = 0; i < _repo.GetListOfKlaims().Count; i++)
                     {
-                        Klaim curKlaim = _repo.GetKlaims()[i];
+                        Klaim curKlaim = _repo.GetListOfKlaims()[i];
                         DisplayKlaim(i, curKlaim); 
                     }
                 }
                 else if (userInput == "2")
                 {
                     // #2 take care of next claim - delete from queue if 'handled' 
-                    DisplayKlaim(0, _repo.GetKlaims()[0]);
+                    List<Klaim> klaimsList = _repo.GetListOfKlaims(); 
+                    if (klaimsList.Count == 0) // its empty
+                    {
+                        Console.WriteLine("there are no active claims in the repo");
+                        continue; 
+                    }
+
+                    DisplayKlaim(0, klaimsList[0]);
                     Console.WriteLine("Do you want to deal with this claim now(y/n)?");
                     String handle_now = Console.ReadLine();
 
                     if (handle_now == "n")
                         continue;
 
-                    _repo.GetKlaims().RemoveAt(0);
+                    klaimsList.RemoveAt(0);
                 }
                 else if (userInput == "3")
                 {
