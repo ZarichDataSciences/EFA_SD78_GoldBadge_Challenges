@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KomodoBBQ
 {
-    class Program
+    class ProgramUI
     {
         static void Main(string[] args)
         {
