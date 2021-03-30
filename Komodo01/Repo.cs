@@ -12,11 +12,12 @@ namespace Komodo01
             return _klaims; 
         }
 
-        public void takeCareOfNextClaim()
+        /*
+           public void takeCareOfNextClaim()
         {
             throw new NotImplementedException();
         }
-
+        */
         public void enterANewClaim(Klaim newKlaim) // can accept objects that are derived from Klaim 
         {
             _klaims.Add(newKlaim);

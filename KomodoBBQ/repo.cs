@@ -8,11 +8,15 @@ namespace KomodoBBQ
 {
     public class FoodSalesRepo
     {
+        // other repo held 'objects'
+        // this repo just holds numbers
         public int NumberHamburgersServed { get; set; }
         public int NumberHotDogsServed { get; set; }
         public int NumberVeggieBurgersServed { get; set; }
         public int NumberIceCreamServed { get; set; }
         public int NumberPopcornBagsServed { get; set; }
+
+
         public decimal CostOfPopcorn = 2.5m;
         public decimal CostOfHamburger = 4.5m;
         public decimal CostOfIceCream = 2.5m;
