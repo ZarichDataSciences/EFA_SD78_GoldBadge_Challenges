@@ -90,9 +90,6 @@ namespace Komodo01
                 {
                     Console.WriteLine("Please enter valid selection.");
                 }
-
-
-
             }
         }
 

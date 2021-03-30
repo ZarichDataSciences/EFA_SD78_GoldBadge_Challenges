@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace KomodoBBQ
 {
-    class Program
+    class Program  
     {
+        static void Main(string[] args)
+        {
+            ProgramUI KomodoBBQCashierMenu = new ProgramUI();
+            KomodoBBQCashierMenu.Run();
+        }
     }
 }
