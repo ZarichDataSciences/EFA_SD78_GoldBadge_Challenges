@@ -29,6 +29,9 @@ namespace Komodo01
                         Klaim curKlaim = _repo.GetListOfKlaims()[i];
                         DisplayKlaim(i, curKlaim); 
                     }
+                    Console.WriteLine("Press any key to continue.");
+                    Console.ReadKey();
+                    Console.Clear();
                 }
                 else if (userInput == "2")
                 {
@@ -48,14 +51,17 @@ namespace Komodo01
                         continue;
 
                     klaimsList.RemoveAt(0);
+                    Console.WriteLine("Press any key to continue.");
+                    Console.ReadKey();
+                    Console.Clear();
                 }
                 else if (userInput == "3")
                 {
-                    Console.WriteLine("what type of claim? 1 - Kar, 2 Home, 3 - theft");
+                    Console.WriteLine("What type of claim? 1 - Kar, 2 Home, 3 - theft");
                     String userInputType = Console.ReadLine();
-                    Console.WriteLine("Enter desip of claim");
+                    Console.WriteLine("Enter description of claim.");
                     String usingInputDesc = Console.ReadLine();
-                    Console.WriteLine("Enter amount of claim");
+                    Console.WriteLine("Enter amount of claim.");
                     String usingInputAmt = Console.ReadLine();
 
                     Console.WriteLine("Enter date of accident in this format: Jan 1, 2009 ");
@@ -70,20 +76,32 @@ namespace Komodo01
                     {
                         KarKlaim kar_klaim = new KarKlaim(0, usingInputDesc, Convert.ToDouble(usingInputAmt), dateOfAccident, DateTime.Now, isValid);
                         _repo.enterANewClaim(kar_klaim); // because enterNewClaim accepts parent "Klaim" type, we can pass child
+                        Console.WriteLine("Press any key to continue.");
+                        Console.ReadKey();
+                        Console.Clear();
                     }
                     else if (userInputType == "2")
                     {
                         KTheftKlaim theft_klaim = new KTheftKlaim(0, usingInputDesc, Convert.ToDouble(usingInputAmt), dateOfAccident, DateTime.Now, isValid);
                         _repo.enterANewClaim(theft_klaim); // because enterNewClaim accepts parent "Klaim" type, we can pass child
+                        Console.WriteLine("Press any key to continue.");
+                        Console.ReadKey();
+                        Console.Clear();
                     }
                     else if (userInputType == "3")
                     {
                         KHomeKlaim home_claim = new KHomeKlaim(0, usingInputDesc, Convert.ToDouble(usingInputAmt), dateOfAccident, DateTime.Now, isValid);
                         _repo.enterANewClaim(home_claim); // because enterNewClaim accepts parent "Klaim" type, we can pass child
+                        Console.WriteLine("Press any key to continue.");
+                        Console.ReadKey();
+                        Console.Clear();
                     }
                     else
                     {
-                        Console.WriteLine("we didn't understand your trpe of claim");
+                        Console.WriteLine("We didn't understand your type of claim, press any key and try again.");
+                        Console.WriteLine("Press any key to continue.");
+                        Console.ReadKey();
+                        Console.Clear();
                     }
                 }
                 else
