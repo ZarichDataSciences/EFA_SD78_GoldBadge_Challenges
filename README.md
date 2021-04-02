@@ -81,6 +81,8 @@ In this scenario I broke up the application into two projects:
 The Unit Tests are called
 -UnitTestsKafe
 
+Please note, there are zero initial menu items. ALL items must be manually entered upon launch.
+
 ## Komodo Klaims Rubric
 Komodo has a bug in its software and needs some new code.
 The Claim has the following properties:
@@ -141,3 +143,5 @@ Klaims is coded differently than the other challenges due to the need for sub cl
 To accomplish there is a directory in the project titled 'KlaimsKlasses' that contains a parent class Klaim.cs
 and three child classes KarKlaim.cs, KHomeKlaim.cs and KTheftKlaim.cs. The program relies on a very basic form of
 polymorphism to pass data between the repo and the klaims klasses. 
+
+Please note, there are NO initial claims. Claims MUST be manually entered to view.
