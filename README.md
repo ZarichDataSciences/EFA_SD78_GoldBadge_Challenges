@@ -138,7 +138,7 @@ Date Of Accident: 4/27/18
 Date of Claim: 4/28/18
 This claim is valid.
   
-## My Implemention for Komodo
+## My Implemention for Komodo Klaims.
 Klaims is coded differently than the other challenges due to the need for sub claim catagories.
 To accomplish there is a directory in the project titled 'KlaimsKlasses' that contains a parent class Klaim.cs
 and three child classes KarKlaim.cs, KHomeKlaim.cs and KTheftKlaim.cs. The program relies on a very basic form of
